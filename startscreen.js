@@ -1,25 +1,32 @@
-#pragma strict
+ #pragma strict
+ 
+ var image : Texture2D;
 
-function OnGUI() {
+  function Start()
+ {
+     image = Resources.Load("Button") as Texture2D;
+ }
+ 
 
-	if (GUI.Button(Rect(10,70,50,30),"Start")){
+ 
+ function OnGUI()
+ {
+ 	if (GUI.Button(Rect(385,580,400,100),"")){
 	    BeginGame();
 	}
-}
-// the function OnGUI is now depreciated
-// we will use it only for the lessons today
-// when we go over Unity's new GUI 
-// please stop using it
+     GUI.skin.button.normal.background = image;
+     GUI.skin.button.hover.background = image;
+     GUI.skin.button.active.background = image;
+    
+ }
 
-function Start () {
 
-}
 
-function Update () {
+ function Update () {
 
 }
 
 function BeginGame(){
    Application.LoadLevel("scene 1");
-   // You can change "Level 1" to 1
+  
 }
