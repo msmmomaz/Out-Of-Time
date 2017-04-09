@@ -19,7 +19,7 @@
              {
                 
      
-                          var spawnPosition : Vector2 = new Vector2 (Random.Range (-4.5, 4.5), Random.Range (-4.5, 4.5)); 
+                          var spawnPosition : Vector2 = new Vector2 (Random.Range (6, 130), Random.Range (4.5, -4.5)); 
                       //var spawnPosition : Vector2= new Vector2 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y);
                   var spawnRotation : Quaternion= Quaternion.identity;
                  Instantiate (enemy, spawnPosition, spawnRotation);
