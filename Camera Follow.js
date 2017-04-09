@@ -7,7 +7,7 @@
  function Update() {
      if(target) {
          var point : Vector3 = GetComponent.<Camera>().WorldToViewportPoint(target.position);
-         var delta : Vector3 = target.position - GetComponent.<Camera>().ViewportToWorldPoint(Vector3(0.15, 0.10, point.z));
+         var delta : Vector3 = target.position - GetComponent.<Camera>().ViewportToWorldPoint(Vector3(0.1, 0.10, point.z));
          var destination : Vector3 = transform.position + delta;
          
          // Set this to the Y position you want the camera locked to
