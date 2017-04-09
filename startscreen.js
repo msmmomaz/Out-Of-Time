@@ -11,7 +11,7 @@
  
  function OnGUI()
  {
- 	if (GUI.Button(Rect(385,580,400,100),"")){
+ 	if (GUI.Button(Rect(750,780,400,100),"")){
 	    BeginGame();
 	}
      GUI.skin.button.normal.background = image;
