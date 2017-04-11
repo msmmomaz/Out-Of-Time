@@ -27,6 +27,6 @@ public class Countdown : MonoBehaviour {
 
 	void TimeUp()
 	{
-		Destroy(gameObject);
+		Application.LoadLevel("GameOver");
 	}
 }
