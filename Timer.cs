@@ -9,6 +9,7 @@ public class Countdown : MonoBehaviour {
 	[SerializeField]
 	public Text CountdownText;
 
+
 	void Start() {
 		if (CountdownText == null) {
 			Debug.LogError("STATUS INDICATOR: No text object referenced!");
@@ -27,6 +28,6 @@ public class Countdown : MonoBehaviour {
 
 	void TimeUp()
 	{
-		Application.LoadLevel("GameOver");
+		Application.LoadLevel("GAME OVER");
 	}
 }
