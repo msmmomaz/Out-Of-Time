@@ -1,4 +1,4 @@
- #pragma strict
+#pragma strict
  
  var image : Texture2D;
 
@@ -11,7 +11,7 @@
  
  function OnGUI()
  {
- 	if (GUI.Button(Rect(750,780,400,100),"")){
+ 	if (GUI.Button(Rect(1650,1580,600,200),"")){
 	    BeginGame();
 	}
      GUI.skin.button.normal.background = image;
@@ -20,13 +20,7 @@
     
  }
 
-
-
- function Update () {
-
-}
-
 function BeginGame(){
-   Application.LoadLevel("scene 1");
-  
+   Application.LoadLevel("GAME");
+ 
 }
